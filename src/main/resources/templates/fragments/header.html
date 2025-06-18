@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Header</title>
+</head>
+<body>
+<!-- fragments/header.html -->
+<div th:fragment="top-nav">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div></div> <!-- Empty space on the left -->
+        <form th:action="@{/logout}" method="post">
+            <button type="submit" class="btn btn-outline-danger">Logout</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
